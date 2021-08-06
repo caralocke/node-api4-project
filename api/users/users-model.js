@@ -6,8 +6,8 @@ module.exports = {
         return users
     },
 
-    async create({ name, password }) {
-        const newUser = { id: shortid.generate(), name, password }
+    async create({ username, password }) {
+        const newUser = { id: shortid.generate(), username, password }
         users.push(newUser)
         return newUser
     }
